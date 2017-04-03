@@ -16,10 +16,10 @@ namespace FizzBuzz
         }
     }
 
-    class FizzBuzz
+    public class FizzBuzz
     {
-        int startNumber;
-        int endNumber;
+        public int startNumber;
+        public int endNumber;
         public FizzBuzz()
         {
 
@@ -34,7 +34,27 @@ namespace FizzBuzz
             this.endNumber = endNumber;
         }
         public string GetOutput() {
-            return "1";
+            string output = GetString(this.startNumber);
+            if (this.startNumber >= this.endNumber)
+                return output;
+            for(int i = this.startNumber+1; i <= this.endNumber; i++)
+            {
+                output += " " + GetString(i);
+            }
+            Console.WriteLine(output);
+
+            return output;
+        }
+        public string GetString(int number)
+        {
+            if (number % 15 == 0)
+                return "fizzbuzz";
+            else if (number % 5 == 0)
+                return "buzz";
+            else if (number % 3 == 0)
+                return "fizz";
+            else
+                return number.ToString();
         }
     }
 }
