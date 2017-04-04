@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HangmanGame", "HangmanGame\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FizzBuzzTests", "FizzBuzzTests\FizzBuzzTests.csproj", "{F17E4734-0B9E-4140-8E81-006773594B1D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Palindrome", "Palindrome\Palindrome.csproj", "{F4664D26-7DB9-46A2-BADA-09E451825CF4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{F17E4734-0B9E-4140-8E81-006773594B1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F17E4734-0B9E-4140-8E81-006773594B1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F17E4734-0B9E-4140-8E81-006773594B1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4664D26-7DB9-46A2-BADA-09E451825CF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4664D26-7DB9-46A2-BADA-09E451825CF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4664D26-7DB9-46A2-BADA-09E451825CF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4664D26-7DB9-46A2-BADA-09E451825CF4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

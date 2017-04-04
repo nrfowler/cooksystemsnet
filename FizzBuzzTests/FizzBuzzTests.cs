@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using FizzBuzz2;
 
 namespace FizzBuzz.Tests
 {
@@ -38,6 +39,24 @@ namespace FizzBuzz.Tests
             fizz.SetRange(1, 20);
             Assert.AreEqual("1 2 fizz 4 buzz fizz 7 8 fizz buzz 11 fizz "+
                 "13 14 fizzbuzz 16 17 fizz 19 buzz", fizz.GetOutput());
+
+        }
+
+        [TestMethod()]
+        public void GetLuckyOutputTest()
+        {
+            FizzBuzzTwo fizz = new FizzBuzzTwo();
+            fizz.SetRange(1, 20);
+            Assert.AreEqual("1 2 lucky 4 buzz fizz 7 8 fizz buzz 11" +
+                " fizz lucky 14 fizzbuzz 16 17 fizz 19 buzz", fizz.GetOutput());
+
+        }
+        [TestMethod()]
+        public void GetReportTest()
+        {
+            FizzBuzzTwo fizz = new FizzBuzzTwo();
+            fizz.SetRange(1, 20);
+            //Assert.AreEqual("lucky = 2\n", fizz.GetReport());
 
         }
     }
