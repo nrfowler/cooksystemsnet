@@ -15,6 +15,9 @@ namespace Palindrome
             Console.WriteLine("Is {0} palindrome? {1}", "deleveled", isPalindrome("deleveled"));
             Console.WriteLine("Is {0} palindrome? {1}", "racecar", isPalindrome("racecar"));
             Console.WriteLine("Is {0} palindrome? {1}", "bobby", isPalindrome("bobby"));
+
+            Console.ReadKey();
+
             Console.ReadKey();
         }
     static bool isPalindrome(string pal)

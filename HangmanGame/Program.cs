@@ -8,6 +8,10 @@ namespace ConsoleApplication1
     {
         static void writeHangman(int guesses)
         {
+
+
+
+
             string noose = "|            | ";
             string bar = "----------------";
             string head = "|            O ";
