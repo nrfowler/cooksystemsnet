@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FizzBuzzTests", "FizzBuzzTe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Palindrome", "Palindrome\Palindrome.csproj", "{F4664D26-7DB9-46A2-BADA-09E451825CF4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DictWebApp", "..\DictWebApp\DictWebApp\DictWebApp.csproj", "{E89585BF-E580-485C-9FC2-4DA2C25C7808}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DictWebApp", "DictWebApp\DictWebApp.csproj", "{E89585BF-E580-485C-9FC2-4DA2C25C7808}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
