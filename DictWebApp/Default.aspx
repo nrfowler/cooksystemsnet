@@ -5,6 +5,7 @@
     <div class="jumbotron">
         <h1>ASP.NET</h1>
         <asp:Literal id="dbTest" runat="server" ></asp:Literal>
+        <asp:Literal id="endStrings" runat="server" ></asp:Literal>
         <p><a href="http://www.asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
     </div>
     
