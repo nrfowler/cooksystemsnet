@@ -14,15 +14,25 @@ namespace DictWebApp
             var words = new NorthwindEntities().WordTables;
             Dictionary<char, int> alphabet = new Dictionary<char, int>();
             Dictionary<char, int> alphabetLast = new Dictionary<char, int>();
-
+            //The total chars of words where the char is the first char
+            Dictionary<char, int> alphabetTotalChars = new Dictionary<char, int>();
+            int numWords = 0;
+            int numChars = 0;
             foreach ( var word in words)
             {
+
                 char firstLetter = word.Word.First();
                 if (alphabet.ContainsKey(firstLetter))
                 {
+                    //add to count of words that match
                     int count = ++alphabet[firstLetter];
                     alphabet.Remove(firstLetter);
                     alphabet.Add(firstLetter, count);
+                    //add length of word to Total Length of Words that Match
+                    count = alphabetTotalChars[firstLetter]+word.Word.Count();
+                    alphabetTotalChars.Remove(firstLetter);
+                    alphabetTotalChars.Add(firstLetter, count);
+                    
                 }
                 else
                     alphabet.Add(firstLetter, 1);
@@ -39,7 +49,7 @@ namespace DictWebApp
             }
             dbTest.Text = "A : "+alphabet['a'].ToString()+ " X: " + alphabet['x'].ToString();
             endStrings.Text = "A : " + alphabetLast['a'].ToString() + " X: " + alphabetLast['x'].ToString();
-
+            averageLength.Text = " Length: " + "A : " + "A : "+ alphabetTotalChars['a'].ToString()+ " X: " + alphabetTotalChars['x'].ToString();
         }
     }
 }
