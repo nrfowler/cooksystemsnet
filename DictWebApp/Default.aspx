@@ -4,11 +4,25 @@
 
     <div class="jumbotron">
         <h1>ASP.NET</h1>
-        <asp:Literal id="dbTest" runat="server" ></asp:Literal>
+        <%--<asp:Literal id="dbTest" runat="server" ></asp:Literal>
         <p>
         <asp:Literal id="endStrings" runat="server" ></asp:Literal>
         </p>
-        <asp:Literal ID="averageLength" runat="server"></asp:Literal>
+        <p>
+        <asp:Literal ID="averageLength" runat="server">Test</asp:Literal>
+            </p>
+            <p>
+        <asp:Literal ID="smallestWordLiteral" runat="server"></asp:Literal>
+                </p>
+                <p>
+         <asp:Literal ID="largestWordLiteral" runat="server"></asp:Literal>
+                    </p>--%>
+                    <asp:GridView ID="gv" runat="server" >
+                        <Columns>
+                            <asp:BoundField HeaderText="# Words with First Char" />
+                        </Columns>
+                    </asp:GridView>
+
     </div>
     
 
